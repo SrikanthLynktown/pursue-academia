@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 import Header from "./Header";
-import ViewSection from "./ViewSection";
 
 const BodySection = () => {
   return (
@@ -23,9 +22,6 @@ const BodySection = () => {
         <Card />
         <Card />
       </div>
-      {/* <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> */}
-      <ViewSection/>
-      {/* </div> */}
     </div>
   );
 };

@@ -1,15 +1,25 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import HeroSection from "@/components/HeroSection";
+import VirtualSection from "@/components/VirtualSection";
+import GoalSection from "@/components/GoalSection";
 import BodySection from "@/components/BodySection";
-
-const inter = Inter({ subsets: ["latin"] });
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
   return (
-    <div className="">
-      <HeroSection />
+    <div>
+      <Carousel
+        showThumbs={false}
+        showStatus={false}
+        showArrows={false}
+        autoPlay
+        infiniteLoop
+        useKeyboardArrows
+      >
+        <HeroSection />
+        <VirtualSection />
+        <GoalSection />
+      </Carousel>
       <BodySection />
     </div>
   );

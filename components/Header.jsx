@@ -30,7 +30,7 @@ const Header = () => {
 
                 </nav>
                 {/* <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Category
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </button> */}
@@ -43,7 +43,7 @@ const Header = () => {
                             <option>XL</option>
                         </select>
                         <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" class="w-4 h-4 mt-1" viewBox="0 0 24 24">
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" class="w-4 h-4 mt-1" viewBox="0 0 24 24">
                                 <path d="M6 9l6 6 6-6"></path>
                             </svg>
                         </span>

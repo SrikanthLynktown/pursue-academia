@@ -5,7 +5,7 @@ import Header from "./Header";
 const BodySection = () => {
   return (
     <div className="p-10">
-      <div className="">
+      <div >
         <Header/>
       </div>
 

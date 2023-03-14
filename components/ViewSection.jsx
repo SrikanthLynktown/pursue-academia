@@ -13,7 +13,7 @@ const ViewSection = () => {
                         <div className="md:hidden">
                         </div>
                         <div className="h-[77px] w-[149px] -mt-[23px]">
-                            <img src="/logo.png" alt="" srcset="" />
+                            <img src="/logo.png" alt="" srcSet="" />
                         </div>
                     </div>
 
@@ -30,7 +30,7 @@ const ViewSection = () => {
             </div>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-4 mx-auto flex flex-wrap flex-col">
-                    <h1 className=' mx-auto mb-10 title-font sm:text-3xl text-3xl mb-4 font-medium text-gray-900 '>13 Essential, Science -backed Study Tips</h1>
+                    <h1 className=' mx-auto  title-font sm:text-3xl text-3xl mb-4 font-medium text-gray-900 '>13 Essential, Science -backed Study Tips</h1>
                     <div class="container mx-auto flex flex-wrap p- flex-col md:flex-row items-center py-4">
                         <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center sm:text-1x text-1x">
                             <p class="mr-1 hover:text-gray-900">By Thomas Frank</p>

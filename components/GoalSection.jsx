@@ -3,7 +3,7 @@ import { IoIosMenu } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
 
-const HeroSection = () => {
+const GoalSection = () => {
   const [showMobileMenue, setShowMobileMenue] = useState(true);
 
   return (
@@ -58,10 +58,9 @@ const HeroSection = () => {
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-5">
               <h1 className="text-[44px] text-[#313131] font-semibold max-w-[680px]">
-                Helping to Find the Right Career is Priceless
+              Goal Planning Session
               </h1>
-              <p className=" text-[20px] text-[#71717A] max-w-[542px]">Our 4 step counseling process help kids to choose the major/career
-                with confidence</p>
+              <p className=" text-[20px] text-[#71717A] max-w-[542px]">8 week program curated to give children a perspective on the world of careers and other important skill sets, such as soft skills & personal finance.</p>
               <div className="space-y-4">
                 <div className="bg-[#3780FF] w-[400px] h-[48px] text-white text-[16px] rounded-[8px] flex justify-center items-center cursor-pointer" onClick={()=>window.open('https://legislative.gov.in/sites/default/files/dummy-pdf_2_2.pdf')}>
                   Download the fllyer
@@ -86,7 +85,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img className="object-cover object-center rounded" alt="hero" src="Helping to Find the Right Career is Priceless.png" />
+              <img className="object-cover object-center rounded" alt="goal" src="Goal Planning Session.png" />
             </div>
           </div>
         </section>
@@ -97,4 +96,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default GoalSection;

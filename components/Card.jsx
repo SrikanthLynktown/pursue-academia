@@ -11,7 +11,7 @@ const Card = () => {
           // src="https://unsplash.com/photos/G85VuTpw6jg"
           src="Goal Planning Session.png"
           alt=""
-          srcset=""
+          srcSet=""
           className="w-full h-full object-cover"
         />
       </div>

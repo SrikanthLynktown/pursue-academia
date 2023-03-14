@@ -19,7 +19,7 @@ const Header = () => {
 
 
         <header class="text-gray-600 body-font">
-            <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center space-y-4 flex flex-col-reverse">
+            <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center space-y-2 flex flex-col-reverse">
 
                 <nav class="md:ml-auto  flex flex-wrap items-center text-base justify-center px-4">
                     <a class="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">All</a>

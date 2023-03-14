@@ -78,7 +78,7 @@ const GoalSection = () => {
                     priority
                   />
                   <div className="absolute text-base w-[99px] h-[24px] left-[150px] 
-              top-[12.01px] font-medium normal leading-6 ml-[23px] mt-[16px]">
+              top-[12.01px] font-medium normal leading-6 ml-[23px] mt-[18px]">
                     <h4 className="poppins text-white">Enquire now</h4>
                   </div>
                 </div>

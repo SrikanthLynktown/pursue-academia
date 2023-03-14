@@ -19,14 +19,14 @@ const Header = () => {
 
 
         <header class="text-gray-600 body-font">
-            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center space-y-2">
+            <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center space-y-4 flex flex-col-reverse">
 
-                <nav class="md:ml-auto  flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">All</a>
-                    <a class="mr-5 hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">My Interest</a>
-                    <a class="mr-5 hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">Popular</a>
-                    <a class="mr-5 hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">Trending</a>
-                    <a class="mr-5 hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">Recent</a>
+                <nav class="md:ml-auto  flex flex-wrap items-center text-base justify-center px-4">
+                    <a class="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">All</a>
+                    <a class="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">My Interest</a>
+                    <a class="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">Popular</a>
+                    <a class="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">Trending</a>
+                    <a class="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">Recent</a>
 
                 </nav>
                 {/* <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Category

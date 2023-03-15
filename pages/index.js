@@ -4,10 +4,14 @@ import GoalSection from "@/components/GoalSection";
 import BodySection from "@/components/BodySection";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import HeaderSection from "@/components/HeaderSection";
 
 export default function Home() {
   return (
     <div>
+      <div className="bg-[#EDEDED] py-10">
+        <HeaderSection />
+      </div>
       <Carousel
         showThumbs={false}
         showStatus={false}

@@ -2,13 +2,13 @@ import React from "react";
 import { useRouter } from 'next/router'
 import { AiFillHeart } from 'react-icons/ai'
 import {IoMdShareAlt} from 'react-icons/io'
-const Card = () => {
+const CenturySkills = () => {
   const router = useRouter();
   return (
     <div className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer">
-      <div >
+      <div className=" bg-red-300"  onClick={() => router.push('./viewpage')}>
         <img
-          src="IMG-20230315-WA0002.jpg"
+          src="IMG-20230315-WA0004.jpg"
           alt=""
           srcSet=""
           className="w-[400px] h-[200px] object-cover"
@@ -42,4 +42,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default CenturySkills;

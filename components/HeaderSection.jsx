@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
+import Image from "next/image";
 const HeaderSection = () => {
     const [showMobileMenue, setShowMobileMenue] = useState(true);
 
@@ -42,7 +43,7 @@ const HeaderSection = () => {
                             />
                         </div>
                         <div className="h-[77px] w-[149px] -mt-[23px]">
-                            <img src="/logo.png" alt="" srcSet="" />
+                            <Image src="/logo.png" alt="" srcSet="" width={149} height={77} priority />
                         </div>
                     </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { AiFillHeart } from 'react-icons/ai'
 import { IoMdShareAlt } from 'react-icons/io'
 import {GiPlayButton} from 'react-icons/gi'
+import Image from 'next/image';
 const StudyCard = () => {
     return (
         <>
@@ -10,8 +11,8 @@ const StudyCard = () => {
                     <div className="flex flex-wrap">
                         <div className="">
                             <div className=" bg-white bg-opacity-75 rounded-lg overflow-hidden relative ">
-                                <div className='bg-red-300 w-[946px] h-[550px]'>
-                                    <img src="Helping to Find the Right Career is Priceless.png" alt="" />
+                                <div className='bg-red-300'>
+                                    <Image src="/Helping to Find the Right Career is Priceless.png" alt="" width={946} height={550} priority/>
                                 </div>
                                 <div className="px-5 py-5 ">
                                     <h1 className="text-xl font-bold">13 Essential Science Backe...</h1>

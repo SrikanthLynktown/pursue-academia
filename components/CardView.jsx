@@ -2,17 +2,21 @@ import React from "react";
 import { useRouter } from 'next/router'
 import { AiFillHeart } from 'react-icons/ai'
 import {IoMdShareAlt} from 'react-icons/io'
+import Image from "next/image";
 const CardView = () => {
   const router = useRouter();
   return (
     <div className=" w-full shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer">
       <div className=" bg-red-300"  onClick={() => router.push('./viewpage')}>
-        <img
+        <Image
           // src="https://unsplash.com/photos/G85VuTpw6jg"
-          src="Goal Planning Session.png"
+          src="/Goal Planning Session.png"
           alt=""
           srcSet=""
-          className="w-[400px] h-[200px] object-cover"
+          className="object-cover"
+          width={400}
+          height={200}
+          priority
         />
       </div>
 

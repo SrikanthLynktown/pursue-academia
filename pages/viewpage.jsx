@@ -20,16 +20,16 @@ const ViewSection = () => {
       </div>
       <div className="min-h-[30px] px-10 py-5">
       </div>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-4 mx-auto flex flex-wrap flex-col">
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-4 mx-auto flex flex-wrap flex-col">
           <h1 className=' mx-auto mb-10 title-font sm:text-3xl text-3xl mb-4 font-medium text-gray-900'>13 Essential, Science -backed Study Tips</h1>
-          <div class="container mx-auto flex flex-wrap p- flex-col md:flex-row items-center py-4">
-            <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center sm:text-1x text-1x ">
-              <p class="mr-1 hover:text-gray-900">By Thomas Frank</p>
+          <div className="container mx-auto flex flex-wrap p- flex-col md:flex-row items-center py-4">
+            <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center sm:text-1x text-1x ">
+              <p className="mr-1 hover:text-gray-900">By Thomas Frank</p>
               <p className='mr-1'><GoPrimitiveDot /></p>
-              <p class="mr-1 hover:text-gray-900">Published : a year ago</p>
+              <p className="mr-1 hover:text-gray-900">Published : a year ago</p>
               <p className='mr-1'><RxDividerVertical /></p>
-              <p class="mr-1 hover:text-gray-900">Update : a year ago</p>
+              <p className="mr-1 hover:text-gray-900">Update : a year ago</p>
             </div>
           </div>
 

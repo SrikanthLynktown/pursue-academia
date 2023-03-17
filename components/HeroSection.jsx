@@ -5,9 +5,9 @@ const HeroSection = () => {
   return (
     <>
       <div className="min-h-[536px] px-10 bg-[#EDEDED]">
-        <section class="text-gray-600 body-font">
-          <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
-            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-5">
+        <section className="text-gray-600 body-font">
+          <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-5">
               <h1 className="text-[44px] text-[#313131] text-left font-medium	 max-w-[680px]">
                 Helping to Find the Right Career is Priceless
               </h1>

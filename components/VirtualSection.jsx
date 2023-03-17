@@ -38,7 +38,7 @@ const VirtualSection = () => {
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img className="object-cover object-center rounded" alt="virtual" src="Helping to Find the Right Career is Priceless-1.png" />
+              <Image className="object-cover object-center rounded" alt="virtual" src="/Helping to Find the Right Career is Priceless-1.png" width={401} height={68}  priority/>
             </div>
           </div>
         </section>

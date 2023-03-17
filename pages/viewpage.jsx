@@ -22,21 +22,21 @@ const ViewSection = () => {
       </div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-4 mx-auto flex flex-wrap flex-col">
-          <h1 className=' mx-auto mb-10 title-font sm:text-3xl text-3xl mb-4 font-medium text-gray-900'>13 Essential, Science -backed Study Tips</h1>
-          <div className="container mx-auto flex flex-wrap p- flex-col md:flex-row items-center py-4">
-            <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center sm:text-1x text-1x ">
+          <h1 className=' mx-auto w-[946px]  title-font sm:text-3xl text-3xl font-medium text-gray-900'>13 Essential, Science -backed Study Tips</h1>
+          <div className="container mx-auto flex flex-wrap p- flex-col md:flex-row items-center py-6">
+            <div className="md:ml-auto md:mr-auto flex flex-wrap w-[946px] text-base sm:text-1x text-1x ">
               <p className="mr-1 hover:text-gray-900">By Thomas Frank</p>
-              <p className='mr-1'><GoPrimitiveDot /></p>
+              <p className='mr-1 mt-1'><GoPrimitiveDot /></p>
               <p className="mr-1 hover:text-gray-900">Published : a year ago</p>
-              <p className='mr-1'><RxDividerVertical /></p>
+              <p className='mr-1 mt-1'><RxDividerVertical /></p>
               <p className="mr-1 hover:text-gray-900">Update : a year ago</p>
             </div>
           </div>
 
-          <div className='w-[946px] h-[750px] block mx-auto  object-cover object-center'>
+          <div className='w-[946px] h-[750px] block mx-auto  object-cover object-center mb-10'>
             <StudyCard />
           </div>
-          <p className='w-[946px] block mx-auto  object-cover object-center py-10'>
+          <p className='mt-20 w-[946px] block mx-auto  object-cover object-center py-10'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis mollitia
             cum sequi quo ad alias ullam odio molestias in maxime eveniet doloribus amet debitis cumque ea saepe et
             corporis doloremque hic itaque, asperiores accusamus quos nemo! Omnis laboriosam corrupti cumque.

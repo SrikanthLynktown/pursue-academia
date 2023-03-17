@@ -2,6 +2,7 @@ import React from 'react';
 import { AiFillHeart } from 'react-icons/ai'
 import { IoMdShareAlt } from 'react-icons/io'
 import {GiPlayButton} from 'react-icons/gi'
+import Image from 'next/image';
 const ViewCard = () => {
     return (
         <>
@@ -11,9 +12,13 @@ const ViewCard = () => {
                         <div className="p-4">
                             <div className="h-full bg-white bg-opacity-75 px-2 pt-4 pb-4 rounded-lg overflow-hidden relative ">
                                 <div className='bg-red-300 min-w-[350px]'>
-                                    <img 
-                                     src="IMG-20230315-WA0002.jpg"
-                                     alt=""/>
+                                    <Image
+                                     src="/IMG-20230315-WA0002.jpg"
+                                     alt=""
+                                     width={350}
+                                     height={200}
+                                     priority/>
+                                     
                                 </div>
                                 <div className="px-5 py-5 ">
                                     <h1 className="text-xl font-bold">13 Essential Science Backe...</h1>

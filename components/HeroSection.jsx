@@ -34,7 +34,9 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img className="object-cover object-center rounded" alt="hero" src="Helping to Find the Right Career is Priceless.png" />
+              <Image className="object-cover object-center rounded" alt="hero" src="/Helping to Find the Right Career is Priceless.png" width={651}
+                    height={484}
+                    priority/>
             </div>
           </div>
         </section>

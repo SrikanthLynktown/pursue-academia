@@ -1,13 +1,13 @@
 import React from "react";
-import { useRouter } from 'next/router'
-import { AiFillHeart } from 'react-icons/ai'
-import {IoMdShareAlt} from 'react-icons/io'
+import { useRouter } from "next/router";
+import { AiFillHeart } from "react-icons/ai";
+import { IoMdShareAlt } from "react-icons/io";
 import Image from "next/image";
 const Card = () => {
   const router = useRouter();
   return (
     <div className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer">
-      <div >
+      <div>
         <Image
           src="/IMG-20230315-WA0002.jpg"
           alt=""
@@ -20,19 +20,23 @@ const Card = () => {
       </div>
 
       <div className="px-5">
-        <h1 className="text-xl font-bold">13 Essential Science Backe...</h1>
+        <h1 className="text-xl font-bold">14 Essential Science Backe...</h1>
         <p className="text-lg text-gray-400">by Thomas Frank</p>
       </div>
 
       <div className="flex justify-between items-center px-5">
         <div className="flex gap-4">
           <div className="flex gap-2">
-            <p className="py-1"><AiFillHeart /></p>
-            <p >32</p>
+            <p className="py-1">
+              <AiFillHeart />
+            </p>
+            <p>34</p>
           </div>
 
           <div className="flex gap-2">
-            <p className="py-1"><IoMdShareAlt/></p>
+            <p className="py-1">
+              <IoMdShareAlt />
+            </p>
             <p>Share</p>
           </div>
         </div>
@@ -41,7 +45,6 @@ const Card = () => {
           Read more
         </div>
       </div>
-
     </div>
   );
 };

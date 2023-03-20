@@ -24,6 +24,7 @@ export default function Home() {
         <VirtualSection />
         <GoalSection />
       </Carousel>
+
       <BodySection />
     </div>
   );

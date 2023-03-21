@@ -5,14 +5,15 @@ import { IoMdShareAlt } from "react-icons/io";
 import Image from "next/image";
 import { Link } from "react-router-dom";
 
-const Consider = ({ data }) => {
+const Consider = ({ data,posts }) => {
   const router = useRouter();
+  console.log("data",data)
 
   return (
     <>
-      {data.map((post) => (
+      {(data.length != 0 ? data:posts).map((post) => (
     
-          <div key={post.id} className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer">
+          <div key={post.id} className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer" onClick={() => router.push('./viewpage')}>
             <div className="bg-red-300">
               <Image
                 src="/IMG-20230315-WA0003.jpg"

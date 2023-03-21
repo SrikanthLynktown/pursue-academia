@@ -14,18 +14,21 @@ const BodySection = (props) => {
   const [selectedValue, setSelectedValue] = useState("all");
   const [filteredPosts, setFilteredPost] = useState([]);
 
+
+
   const fetchPost = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((res) => res.json())
       .then((data) => setPost(data.slice(0, 30)));
+      
   };
-
   useEffect(() => {
     fetchPost();
+
   }, []);
 
   const handleChange = (event) => {
-    const filterValue = event.target.value;
+    const filterValue = event.target.value 
     setSelectedValue(filterValue);
 
     if (filterValue === "all") {
@@ -37,7 +40,6 @@ const BodySection = (props) => {
       setFilteredPost(filtered);
     }
   };
-
   return (
     <div className="p-10">
       <div>
@@ -64,6 +66,7 @@ const BodySection = (props) => {
             <div className="flex ml-6 items-center">
               <div className="relative">
                 <select
+                defaultValue={"all"}
                   value={selectedValue}
                   onChange={handleChange}
                   className="rounded-[5px] border border-[#DADADA] appearance-none focus:outline-none  pl-3  w-[110px] h-[40px]"
@@ -93,7 +96,7 @@ const BodySection = (props) => {
       </div>
 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
-        <Consider data={filteredPosts} />
+        <Consider data={filteredPosts} posts={ posts} />
         {/* <CenturySkills/>
       <CareerPlan/>
       <EntranceTest/>

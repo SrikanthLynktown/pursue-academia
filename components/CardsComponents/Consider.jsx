@@ -3,8 +3,7 @@ import { useRouter } from "next/router";
 import { AiFillHeart } from "react-icons/ai";
 import { IoMdShareAlt } from "react-icons/io";
 import Image from "next/image";
-import { Link } from "react-router-dom";
-
+import Link from "next/link";
 const Consider = ({ data,posts }) => {
   const router = useRouter();
   console.log("data",data)
@@ -13,7 +12,7 @@ const Consider = ({ data,posts }) => {
     <>
       {(data.length != 0 ? data:posts).map((post) => (
     
-          <div key={post.id} className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer" onClick={() => router.push('./viewpage')}>
+          <Link href={`/blogs/${post.id}`} key={post.id} className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer">
             <div className="bg-red-300">
               <Image
                 src="/IMG-20230315-WA0003.jpg"
@@ -28,7 +27,7 @@ const Consider = ({ data,posts }) => {
 
             <div className="px-5">
               <h1 className="text-lg font-bold">{post.title}</h1>
-              <p className="text-lg text-gray-400">by {post.userId}</p>
+              <p className="text-lg text-gray-400">by {post.id}</p>
             </div>
 
             <div className="flex justify-between items-center px-5">
@@ -52,7 +51,7 @@ const Consider = ({ data,posts }) => {
                 Read more
               </div>
             </div>
-          </div>
+          </Link>
        
       ))}
     </>

@@ -7,16 +7,16 @@ const HeaderSection = () => {
 
     return (
         <>
-            <div className="px-10">
+            <div className="px-4">
                 {showMobileMenue && (
-                    <div className="fixed md:hidden bg-white p left-0 right-0 top-0 opacity-100 z-[100]">
-                        <span
-                            className="text-2xl cursor-pointer"
+                    <div className="w-[390p] h-[180px] fixed md:hidden bg-white pt-6 left-0 right-0 top-0 opacity-100 z-[100]">
+                        <span 
+                            className="text-xl cursor-pointer ml-6 w-[26px] h-[2px] text-[#333333]"
                             onClick={() => setShowMobileMenue(false)}
                         >
                             X
                         </span>
-                        <div className="flex flex-col gap-4 mt-8 justify-center items-center">
+                        <div className="flex flex-col gap-4  justify-center items-center">
                             <div className="flex gap-6">
                                 <p className="text-gray-400 py-1 ">01</p>
                                 <p className="rounded-[6px] h-[37px] w-[265px] flex justify-center items-center border border-blue-500 text-blue-500">

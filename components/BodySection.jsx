@@ -29,11 +29,11 @@ const BodySection = (props) => {
 
   const handleChange = (event) => {
     const filterValue = event.target.value
-     fetch(`https://jsonplaceholder.typicode.com/posts/${filterValue}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts/${filterValue}`)
       .then((res) => res.json())
       .then((data) => setFilteredPost(data));
 
-      
+
     // setSelectedValue(filterValue);
 
     // if (filterValue === "all") {
@@ -50,51 +50,65 @@ const BodySection = (props) => {
     <div className="md:p-10">
       <div>
         <header className="text-gray-600 body-font">
-          <div className="container mx-auto flex flex-wrap md:flex-row items-center space-y-2  flex-col-reverse">
-            <nav className="md:ml-auto  flex flex-wrap items-center text-base justify-center px-4">
-              <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
-                All
-              </a>
-              <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
-                My Interest
-              </a>
-              <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
-                Popular
-              </a>
-              <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
-                Trending
-              </a>
-              <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
-                Recent
-              </a>
-            </nav>
+          <div className="container mx-aut flex flex-wra md:flex-row   ">
+            <div className="md:ml-auto w-ful flex px-4">
+              <div className="flex w-[220px] md:w-full md:py-4 mt-6 md:mt-0 overflow-x-auto overflow-y-hidden">
+                <div>
+                  <a className="hover:bg-[#E5E5E5] rounded-[2px] md:rounded-[5px] px-2 py-1 cursor-pointer">
+                    All
+                  </a>
+                </div>
+                <div>
+                  <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer md:visible invisible ">
+                    My Interest
+                  </a>
+                </div>
+                <div className="flex -ml-14 md:-ml-0">
+                  <div >
+                    <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
+                      Popular
+                    </a>
+                  </div>
+                  <div>
+                    <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
+                      Trending
+                    </a>
+                  </div>
+                  <div>
+                    <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
+                      Recent
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-            <div className="flex ml-6 items-center">
-              <div className="relative">
-                <select
-                  defaultValue={"all"}
-                  value={selectedValue}
-                  onChange={handleChange}
-                  className="rounded-[5px] border border-[#DADADA] appearance-none focus:outline-none  pl-3  w-[110px] h-[40px]"
-                >
-                  <option value="all">Category</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="4"
-                    className="w-4 h-4 mt-1"
-                    viewBox="0 0 24 24"
+              <div className="flex ml-16 md:ml-6 items-center">
+                <div className="relative">
+                  <select
+                    defaultValue={"all"}
+                    value={selectedValue}
+                    onChange={handleChange}
+                    className="rounded-[5px] border border-[#DADADA] appearance-none focus:outline-none  pl-3  w-[110px] h-[40px]"
                   >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
+                    <option value="all">Category</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="4"
+                      className="w-4 h-4 mt-1"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -102,7 +116,7 @@ const BodySection = (props) => {
       </div>
 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
-        <Consider post={filteredPosts}  data={posts}/>
+        <Consider post={filteredPosts} data={posts} />
         {/* <CenturySkills/>
       <CareerPlan/>
       <EntranceTest/>

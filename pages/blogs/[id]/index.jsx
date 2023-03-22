@@ -17,7 +17,7 @@ const Blogs = () => {
     }, [router.query.id, blog])
     return (
         <>
-            <div className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer mx-auto mt-10">
+            <div className=" md:w-[400px] md:h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer mx-aut mt-10  ml-4 mr-4 md:ml-0 md:mr-0">
                 <div className="bg-red-300">
                     <Image
                         src="/IMG-20230315-WA0003.jpg"

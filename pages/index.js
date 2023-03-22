@@ -9,10 +9,13 @@ import HeaderSection from "@/components/HeaderSection";
 export default function Home() {
   return (
     <div>
-      <div className="bg-[#EDEDED] py-10">
+      <div className="bg-[#EDEDED] py-10 w-[410px] lg:w-full md:w-full">
         <HeaderSection />
-      </div>
-      <Carousel
+      
+
+      <HeroSection />
+</div>
+      {/* <Carousel
         showThumbs={false}
         showStatus={false}
         showArrows={false}
@@ -23,7 +26,7 @@ export default function Home() {
         <HeroSection />
         <VirtualSection />
         <GoalSection />
-      </Carousel>
+      </Carousel> */}
 
       <BodySection />
     </div>

@@ -12,7 +12,7 @@ import Consider from "./CardsComponents/Consider";
 const BodySection = (props) => {
   const [posts, setPost] = useState([]);
   const [selectedValue, setSelectedValue] = useState("all");
-  const [filteredPosts, setFilteredPost] = useState([]);
+  const [filteredPosts, setFilteredPost] = useState();
 
 
 
@@ -20,7 +20,7 @@ const BodySection = (props) => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((res) => res.json())
       .then((data) => setPost(data.slice(0, 30)));
-      
+
   };
   useEffect(() => {
     fetchPost();
@@ -28,20 +28,26 @@ const BodySection = (props) => {
   }, []);
 
   const handleChange = (event) => {
-    const filterValue = event.target.value 
-    setSelectedValue(filterValue);
+    const filterValue = event.target.value
+     fetch(`https://jsonplaceholder.typicode.com/posts/${filterValue}`)
+      .then((res) => res.json())
+      .then((data) => setFilteredPost(data));
 
-    if (filterValue === "all") {
-      setFilteredPost(posts);
-    } else {
-      const filtered = posts.filter(
-        (post) => post.userId === parseInt(filterValue)
-      );
-      setFilteredPost(filtered);
-    }
+      
+    // setSelectedValue(filterValue);
+
+    // if (filterValue === "all") {
+    //   setFilteredPost(posts);
+    // } else {
+    //   const filtered = posts.filter(
+    //     (post) => post.userId === parseInt(filterValue)
+    //   );
+    //   setFilteredPost(filtered);
+    // }
+
   };
   return (
-    <div className="p-10">
+    <div className="md:p-10">
       <div>
         <header className="text-gray-600 body-font">
           <div className="container mx-auto flex flex-wrap md:flex-row items-center space-y-2  flex-col-reverse">
@@ -66,7 +72,7 @@ const BodySection = (props) => {
             <div className="flex ml-6 items-center">
               <div className="relative">
                 <select
-                defaultValue={"all"}
+                  defaultValue={"all"}
                   value={selectedValue}
                   onChange={handleChange}
                   className="rounded-[5px] border border-[#DADADA] appearance-none focus:outline-none  pl-3  w-[110px] h-[40px]"
@@ -96,7 +102,7 @@ const BodySection = (props) => {
       </div>
 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
-        <Consider data={filteredPosts} posts={ posts} />
+        <Consider post={filteredPosts}  data={posts}/>
         {/* <CenturySkills/>
       <CareerPlan/>
       <EntranceTest/>

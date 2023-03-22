@@ -9,7 +9,7 @@ const HeaderSection = () => {
         <>
             <div className="px-10">
                 {showMobileMenue && (
-                    <div className="fixed md:hidden bg-white p-10 left-0 right-0 top-0 opacity-100 z-[100]">
+                    <div className="fixed md:hidden bg-white p left-0 right-0 top-0 opacity-100 z-[100]">
                         <span
                             className="text-2xl cursor-pointer"
                             onClick={() => setShowMobileMenue(false)}
@@ -35,14 +35,14 @@ const HeaderSection = () => {
                 )}
                 {/* <div className="min-h-[636px] px-10 bg-[#EDEDED] py-10 "> */}
                 <nav className="flex justify-between items-start">
-                    <div className="flex gap-3 items-center">
+                    <div className="flex gap- items-center">
                         <div className="md:hidden">
                             <AiOutlineMenu
                                 className="text-[3rem] cursor-pointer"
                                 onClick={() => setShowMobileMenue(true)}
                             />
                         </div>
-                        <div className="h-[77px] w-[149px] -mt-[23px]">
+                        <div className="md:h-[77px] md:w-[149px] md:-mt-[23px]">
                             <Image src="/logo.png" alt="" srcSet="" width={149} height={77} priority />
                         </div>
                     </div>

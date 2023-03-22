@@ -11,11 +11,11 @@ export default function Home() {
     <div>
       <div className="bg-[#EDEDED] py-10 w-[410px] lg:w-full md:w-full">
         <HeaderSection />
-      
 
-      <HeroSection />
-</div>
-      {/* <Carousel
+
+        {/* <HeroSection /> */}
+     
+      <Carousel
         showThumbs={false}
         showStatus={false}
         showArrows={false}
@@ -26,8 +26,8 @@ export default function Home() {
         <HeroSection />
         <VirtualSection />
         <GoalSection />
-      </Carousel> */}
-
+      </Carousel>
+      </div>
       <BodySection />
     </div>
   );

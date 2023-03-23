@@ -3,67 +3,70 @@ import Image from "next/image";
 import { AiFillHeart } from "react-icons/ai";
 import { IoMdShareAlt } from "react-icons/io";
 import { useRouter } from "next/router";
+import { AiOutlineMenu } from "react-icons/ai";
+import { GoPrimitiveDot } from "react-icons/go";
+import { RxDividerVertical } from "react-icons/rx";
+import Card from "@/components/Card";
+import ViewCard from "@/components/ViewCard";
+import HeaderSection from "@/components/HeaderSection";
+import StudyCard from "@/components/StudyCard";
+import CardView from "@/components/CardView";
+import ViewCardSecond from "@/components/ViewCardSecond";
+import ViewCardThird from "@/components/ViewCardThird";
+
 const Blogs = () => {
-    const router = useRouter();
-    const [blog, setBlog] = useState();
-    console.log('blog', blog);
-    useEffect(() => {
-        const id = router.query.id;
-        async function getBlogsId(id) {
-            const blogsdata = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-            setBlog(await blogsdata.json());
-        }
-        getBlogsId(id)
-    }, [router.query.id, blog])
-    return (
-        <>
-            <div className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer mx-auto mt-10">
-                <div className="bg-red-300">
-                    <Image
-                        src="/IMG-20230315-WA0003.jpg"
-                        alt=""
-                        srcSet=""
-                        className="object-cover"
-                        width={400}
-                        height={200}
-                        priority
-                    />
-                </div>
-                <div className="px-5">
-                    <h1 className="text-lg font-bold">{blog?.title}</h1>
-                    <p className="text-lg text-gray-400">by {blog?.id}</p>
-                </div>
-                <div className="flex justify-between items-center px-5">
-                    <div className="flex gap-4">
-                        <div className="flex gap-2">
-                            <p className="py-1">
-                                <AiFillHeart />
-                            </p>
-                            <p>32</p>
-                        </div>
-
-                        <div className="flex gap-2">
-                            <p className="py-1">
-                                <IoMdShareAlt />
-                            </p>
-                            <p>Share</p>
-                        </div>
-                    </div>
-
-                    <div className="w-[94px] h-[37px] flex justify-center items-center rounded-[5px] border border-[#DADADA] cursor-pointer">
-                        Read more
-                    </div>
-                </div>
+  const router = useRouter();
+  const [blog, setBlog] = useState();
+  console.log(blog);
+  useEffect(() => {
+    const id = router.query.id;
+    async function getBlogsId(id) {
+      const blogsdata = await fetch(
+        `https://jsonplaceholder.typicode.com/posts/${id}`
+      );
+      setBlog(await blogsdata.json());
+    }
+    getBlogsId(id);
+  }, [router.query.id, blog]);
+  return (
+    <>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-4 mx-auto flex flex-wrap flex-col">
+          <h1 className=" mx-auto w-[946px]  title-font sm:text-3xl text-3xl font-medium text-gray-900">
+            {blog?.title}
+          </h1>
+          <div className="container mx-auto flex flex-wrap p- flex-col md:flex-row items-center py-6">
+            <div className="md:ml-auto md:mr-auto flex flex-wrap w-[946px] text-base sm:text-1x text-1x ">
+              <p className="mr-1 hover:text-gray-900">By Thomas Frank</p>
+              <p className="mr-1 mt-1">
+                <GoPrimitiveDot />
+              </p>
+              <p className="mr-1 hover:text-gray-900">Published : a year ago</p>
+              <p className="mr-1 mt-1">
+                <RxDividerVertical />
+              </p>
+              <p className="mr-1 hover:text-gray-900">Update : a year ago</p>
             </div>
-        </>
-    )
-}
+          </div>
+
+          <div className="w-[946px] h-[750px] block mx-auto  object-cover object-center mb-10">
+            <StudyCard />
+          </div>
+          <p className="mt-20 w-[946px] block mx-auto  object-cover object-center py-10">
+            {blog?.body}
+          </p>
+          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 px-4 mx-auto  object-cover object-center">
+            <ViewCard />
+            <ViewCardSecond />
+            <ViewCardThird />
+          </div>
+        </div>
+        <div></div>
+      </section>
+    </>
+  );
+};
 export default Blogs;
-
-
-
-
-
 
 // import { useRouter } from "next/router";
 // import Link from "next/link";

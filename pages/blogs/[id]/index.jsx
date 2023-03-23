@@ -1,18 +1,10 @@
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import { AiFillHeart } from "react-icons/ai";
-import { IoMdShareAlt } from "react-icons/io";
 import { useRouter } from "next/router";
-import { AiOutlineMenu } from "react-icons/ai";
 import { GoPrimitiveDot } from "react-icons/go";
 import { RxDividerVertical } from "react-icons/rx";
-import Card from "@/components/Card";
 import ViewCard from "@/components/ViewCard";
 import HeaderSection from "@/components/HeaderSection";
 import StudyCard from "@/components/StudyCard";
-import CardView from "@/components/CardView";
-import ViewCardSecond from "@/components/ViewCardSecond";
-import ViewCardThird from "@/components/ViewCardThird";
 
 const Blogs = () => {
   const router = useRouter();

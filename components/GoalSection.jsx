@@ -42,11 +42,11 @@ const GoalSection = () => {
                 height={403.12}
                 priority />
             </div> */}
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-[168px] mt-[4px] md-w-full md:-mt-0">
-              <Image className="object-cover object-center rounded" alt="goal" src="/Goal Planning Session.png"
-               width={629.99}
-               height={403.12}   
-                            priority />
+            <div className="lg:max-w-lg lg:w-full md:w-1/3 w-[168px] mt-[4px] md:mt-0  md:-mt-0">
+              <Image className="md:mx-aut md:ml-[120px] md:mt-[190px] lg:ml-0 lg:mt-0 object-cover object-center rounded" alt="goal" src="/Goal Planning Session.png"
+                width={629.99}
+                height={403.12}
+                priority />
             </div>
           </div>
         </section>

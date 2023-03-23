@@ -6,8 +6,8 @@ const HeroSection = () => {
     <>
       <div className="px-10">
         <section className="text-gray-600 body-font">
-          <div className="container  mx-auto flex px-14 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0  text-center space-y-5">
+          <div className="container  mx-auto flex md:flex-row flex-col items-center">
+            <div className="lg:flex-grow md:w-1/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0  text-center space-y-5">
               <h1 className="px-4 md:px-0 text-[#313131] text-[30px] md:text-[48px] w-[345px] md:w-[680px] h-[125px] md:h-[128px] leading:[42px] md:leading-[64px] text-left font-medium	font-serif font-semibold not-italic  max-w-[680px]">
                 Helping to Find the Right Career is Priceless
               </h1>
@@ -33,8 +33,8 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-[168px] -mt-[37px] md-w-full md:-mt-0">
-              <Image className="object-cover object-center rounded" alt="hero" src="/Helping to Find the Right Career is Priceless.png"
+            <div className="lg:max-w-lg lg:w-full md:w-1/3 w-[168px] -mt-[37px] md-w-full md:-mt-0">
+              <Image className=" md:ml-[250px] md:mt-[220px] lg:ml-0 lg:mt-0 object-cover object-center rounded" alt="hero" src="/Helping to Find the Right Career is Priceless.png"
                 width={651}
                 height={484}
                 priority />

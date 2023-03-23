@@ -38,8 +38,8 @@ const VirtualSection = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-[168px] -mt-[37px] md-w-full md:-mt-0">
-              <Image className="object-cover object-center rounded" alt="virtual" src="/Helping to Find the Right Career is Priceless-1.png"
+            <div className="lg:max-w-lg lg:w-full md:w-1/3 w-[168px] -mt-[37px] md-w-full md:-mt-0">
+              <Image className="md:ml-[170px] md:mt-[250px] lg:ml-0 lg:mt-0 object-cover object-center rounded" alt="virtual" src="/Helping to Find the Right Career is Priceless-1.png"
                 width={651}
                 height={484}
                 priority />

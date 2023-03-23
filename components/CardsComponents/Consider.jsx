@@ -12,7 +12,7 @@ const Consider = ({ post,data }) => {
 
   const userData = (post) => {
     return (
-      <Link href={`/blogs/${post.id}`} key={post} className=" w-[400px] h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer mx-auto ">
+      <Link href={`/blogs/${post.id}`} key={post} className="mx-auto w-[400px]  md:w-[340px] lg:w-[300px] xl:w-[380px] md:h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer mx-auto ">
         <div className="bg-red-300">
           <Image
             src="/IMG-20230315-WA0003.jpg"

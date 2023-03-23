@@ -8,23 +8,22 @@ import HeaderSection from "@/components/HeaderSection";
 
 export default function Home() {
   return (
-    <div>
-      <div className="bg-[#EDEDED] py-10">
+    <div className="ml-4 mr-4 md:ml-0 md:mr-0">
+      <div className="bg-[#EDEDED] md:py-10 w-[410px] h-[540px] md:h-[550px] lg:w-full md:w-full">
         <HeaderSection />
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          showArrows={false}
+          autoPlay
+          infiniteLoop
+          useKeyboardArrows
+        >
+          <HeroSection />
+          <VirtualSection />
+          <GoalSection />
+        </Carousel>
       </div>
-      <Carousel
-        showThumbs={false}
-        showStatus={false}
-        showArrows={false}
-        autoPlay
-        infiniteLoop
-        useKeyboardArrows
-      >
-        <HeroSection />
-        <VirtualSection />
-        <GoalSection />
-      </Carousel>
-
       <BodySection />
     </div>
   );

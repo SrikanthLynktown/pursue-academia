@@ -6,11 +6,11 @@ import Image from 'next/image';
 const ViewCard = () => {
     return (
         <>
-            <section class="text-gray-600 body-font bg-[#E5E5E5]">
-                <div class="container px-5 py-6 mx-auto">
-                    <div class="flex flex-wrap -m-4">
-                    <div class="p-4 md:w-1/3">
-                            <div class="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <section className="text-gray-600 body-font bg-[#E5E5E5]">
+                <div className="container px-5 py-6 mx-auto">
+                    <div className="flex flex-wrap -m-4">
+                    <div className="p-4 md:w-1/3">
+                            <div className="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <div className="bg-red-300">
                                     <Image
                                         src="/IMG-20230315-WA0003.jpg"
@@ -22,7 +22,7 @@ const ViewCard = () => {
                                         priority
                                     />
                                 </div>
-                                <div class="py-6 md:py-0 lg:py-0">
+                                <div className="py-6 md:py-0 lg:py-0">
                                     <div className="flex justify-between items-center px-2 mt-6">
                                         <div className="flex gap-4">
                                             <div className="flex gap-2">
@@ -48,8 +48,8 @@ const ViewCard = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4 md:w-1/3">
-                            <div class="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <div className="p-4 md:w-1/3">
+                            <div className="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <div className="bg-red-300">
                                     <Image
                                         src="/IMG-20230315-WA0003.jpg"
@@ -61,7 +61,7 @@ const ViewCard = () => {
                                         priority
                                     />
                                 </div>
-                                <div class="py-6 md:py-0 lg:py-0">
+                                <div className="py-6 md:py-0 lg:py-0">
                                     <div className="flex justify-between items-center px-2 mt-6">
                                         <div className="flex gap-4">
                                             <div className="flex gap-2">
@@ -87,8 +87,8 @@ const ViewCard = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="p-4 md:w-1/3">
-                            <div class="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <div className="p-4 md:w-1/3">
+                            <div className="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <div className="bg-red-300">
                                     <Image
                                         src="/IMG-20230315-WA0003.jpg"
@@ -100,7 +100,7 @@ const ViewCard = () => {
                                         priority
                                     />
                                 </div>
-                                <div class="py-6 md:py-0 lg:py-0">
+                                <div className="py-6 md:py-0 lg:py-0">
                                     <div className="flex justify-between items-center px-2 mt-6">
                                         <div className="flex gap-4">
                                             <div className="flex gap-2">

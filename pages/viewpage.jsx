@@ -21,7 +21,7 @@ const ViewSection = () => {
       <div className="min-h-[30px] px-10 py-5"></div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-4 mx-auto flex flex-wrap flex-col">
-          <h1 className=" mx-auto w-[946px]  title-font sm:text-3xl text-3xl font-medium text-gray-900">
+          <h1 className=" mx-auto w-[946px]  title-font  text-3xl font-medium text-gray-900">
             13 Essential, Science -backed Study Tips
           </h1>
           <div className="container mx-auto flex flex-wrap p- flex-col md:flex-row items-center py-6">
@@ -49,7 +49,7 @@ const ViewSection = () => {
             <ViewCardSecond />
             <ViewCardThird />
           </div>
-         
+
         </div>
         <div></div>
       </section>

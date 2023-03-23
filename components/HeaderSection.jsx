@@ -3,7 +3,7 @@ import { IoIosMenu } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
 const HeaderSection = () => {
-    const [showMobileMenue, setShowMobileMenue] = useState(true);
+    const [showMobileMenue, setShowMobileMenue] = useState(false);
 
     return (
         <>

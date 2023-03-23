@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillHeart } from 'react-icons/ai'
 import { IoMdShareAlt } from 'react-icons/io'
-import {GiPlayButton} from 'react-icons/gi'
+import { GiPlayButton } from 'react-icons/gi'
 import Image from 'next/image';
 const StudyCard = () => {
     return (
@@ -9,34 +9,42 @@ const StudyCard = () => {
             <section className="text-gray-600 body-font bg-[#EDEDED]">
                 <div className="container ">
                     <div className="flex flex-wrap">
-                        <div className="">
-                            <div className=" bg-white bg-opacity-75 rounded-lg overflow-hidden relative ">
-                                <div className='bg-red-300'>
-                                    <Image src="/Helping to Find the Right Career is Priceless.png" alt="" width={946} height={550} priority/>
+                        <div className="mr-4">
+                            <div className="mr-4 w-[940px] md:w-[946px] bg-white bg-opacity-75 rounded-lg overflow-hidden relative ">
+                                <div className="bg-red-300">
+                                    <Image
+                                        src="/IMG-20230315-WA0003.jpg"
+                                        alt=""
+                                        srcSet=""
+                                        className="object-cover w-full"
+                                        width={400}
+                                        height={200}
+                                        priority
+                                    />
                                 </div>
                                 <div className="px-5 py-5 ">
-                                    <h1 className="text-xl font-bold">13 Essential Science Backe...</h1>
-                                    <p className="text-lg text-gray-400">by Thomas Frank</p>
+                                    <h1 className="text-[30px]  md:text-[20px] font-medium	font-serif font-normal">13 Essential Science Backe...</h1>
+                                    <p className="text-[26px]  md:text-[20px] font-serif font-normal">by Thomas Frank</p>
                                 </div>
                                 <div className="flex justify-between items-center px-5 py-5">
                                     <div className="flex gap-4">
                                         <div className="flex gap-2">
-                                            <p className="py-1"><AiFillHeart /></p>
-                                            <p >32</p>
+                                            <p className="mt-2 md:mt-1 lg:mt-1 text-[30px]  md:text-[20px]"><AiFillHeart /></p>
+                                            <p className='text-[30px]  md:text-[20px] '>32</p>
                                         </div>
                                         <div className="flex gap-2">
-                                            <p className="py-1"><GiPlayButton /></p>
-                                            <p>12</p>
+                                            <p className="mt-2 md:mt-1 lg:mt-1 text-[30px]  md:text-[20px]"><GiPlayButton /></p>
+                                            <p className='text-[30px]  md:text-[20px]'>12</p>
                                         </div>
 
                                         <div className="flex gap-2">
-                                            <p className="py-1"><IoMdShareAlt /></p>
-                                            <p>Share</p>
+                                            <p className="mt-2  md:mt-1 lg:mt-1 text-[30px]  md:text-[20px]"><IoMdShareAlt /></p>
+                                            <p className='text-[30px]  md:text-[20px] font-serif font-normal'>Share</p>
                                         </div>
                                     </div>
 
-                                    <div className="w-[94px] h-[37px] flex justify-center items-center rounded-[5px] border border-[#DADADA] cursor-pointer">
-                                        Read more
+                                    <div className=" w-[200px]  h-[50px] flex justify-center items-center rounded-[5px] border border-[#DADADA] cursor-pointer">
+                                       <span className=' text-[30px]  md:text-[20px] font-serif font-normal'> Read more</span>
                                     </div>
                                 </div>
                             </div>

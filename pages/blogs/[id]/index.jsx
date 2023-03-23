@@ -31,34 +31,36 @@ const Blogs = () => {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-4 mx-auto flex flex-wrap flex-col">
-          <h1 className=" mx-auto w-[946px]  title-font sm:text-3xl text-3xl font-medium text-gray-900">
+        <div className="mt-10 py-10 md:py-0">
+          <HeaderSection />
+        </div>
+        <div className="container px-5  mx-auto flex flex-wrap flex-col">
+          <h1 className=" md:px-0 text-[#313131] text-[30px] md:text-[30px]  md:w-[680px]  leading:[42px] md:leading-[40px] text-left lg:px-36 font-medium	font-serif font-semibold not-italic">
             {blog?.title}
           </h1>
-          <div className="container mx-auto flex flex-wrap p- flex-col md:flex-row items-center py-6">
+          <div className="container mx-aut flex flex-wrap flex-col md:flex-row items-cente mb-12 md:mb-0 md:py-4">
             <div className="md:ml-auto md:mr-auto flex flex-wrap w-[946px] text-base sm:text-1x text-1x ">
-              <p className="mr-1 hover:text-gray-900">By Thomas Frank</p>
-              <p className="mr-1 mt-1">
+              <p className="text-[30px] md:text-[20px] mr-1 hover:text-gray-900 ">By Thomas Frank</p>
+              <p className="text-[30px] md:text-[20px] mr-1 md:mt-1">
                 <GoPrimitiveDot />
               </p>
-              <p className="mr-1 hover:text-gray-900">Published : a year ago</p>
-              <p className="mr-1 mt-1">
+              <p className="text-[30px]  md:text-[20px] mr-1 hover:text-gray-900">Published : a year ago</p>
+              <p className="text-[30px] md:text-[20px] mr-1 md:mt-1">
                 <RxDividerVertical />
               </p>
-              <p className="mr-1 hover:text-gray-900">Update : a year ago</p>
+              <p className="text-[30px] md:text-[20px] mr-1 hover:text-gray-900">Update : a year ago</p>
             </div>
           </div>
 
-          <div className="w-[946px] h-[750px] block mx-auto  object-cover object-center mb-10">
+          <div className="w-[946px] h-[700px] md:h-full block mx-auto  object-cover object-center mb-">
             <StudyCard />
           </div>
-          <p className="mt-20 w-[946px] block mx-auto  object-cover object-center py-10">
+          <p className="py-10 md:px-0 mt- w-[946px] block mx-auto text-[30px] md:text-[20px]  object-cover object-center">
             {blog?.body}
           </p>
-          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 px-4 mx-auto  object-cover object-center">
+
+          <div className="">
             <ViewCard />
-            <ViewCardSecond />
-            <ViewCardThird />
           </div>
         </div>
         <div></div>
@@ -68,32 +70,3 @@ const Blogs = () => {
 };
 export default Blogs;
 
-// import { useRouter } from "next/router";
-// import Link from "next/link";
-// import useSWR from 'swr'
-
-// const fetchBlogs = (...blogdata) => fetch(...blogdata).then(res => res.json())
-// const Blogs = () => {
-//     const { data, error } = useSWR('https://jsonplaceholder.typicode.com/posts', fetchBlogs)
-//     console.log('data', data);
-//     if (error) {
-//         return <h1>Error</h1>;
-//     }
-
-//     if (!data) return <h1>Loading</h1>
-
-//     return (
-//         <>
-//             <div>
-//                 {data &&
-//                     data.map((blogData) => {
-//                         <Link href={`/blogs/${blogData.id}`} key={blogData.id}>
-//                             <div>{data.title}</div>
-//                         </Link>
-//                     })
-//                 }
-//             </div>
-//         </>
-//     )
-// }
-// export default Blogs;

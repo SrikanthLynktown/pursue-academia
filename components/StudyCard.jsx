@@ -11,12 +11,12 @@ const StudyCard = () => {
                     <div className="flex flex-wrap">
                         <div className="mr-4">
                             <div className="mr-4 w-[940px] md:w-[946px] bg-white bg-opacity-75 rounded-lg overflow-hidden relative ">
-                                <div className="bg-red-300">
+                                <div className="bg-white">
                                     <Image
                                         src="/IMG-20230315-WA0003.jpg"
                                         alt=""
                                         srcSet=""
-                                        className="object-cover w-full"
+                                        className="object-cover w-full p-2"
                                         width={400}
                                         height={200}
                                         priority

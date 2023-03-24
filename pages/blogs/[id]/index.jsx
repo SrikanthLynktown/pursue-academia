@@ -23,14 +23,14 @@ const Blogs = () => {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="md:ml-5 mt-10 py-10 md:py-0">
+        <div className="lg:ml-5 mt-10 py-10 md:py-0">
           <HeaderSection />
         </div>
         <div className="container px-5  mx-auto flex flex-wrap flex-col">
-          <h1 className=" md:px-0 text-[#313131] text-[30px] md:text-[30px]  leading:[42px] md:leading-[40px] text-left lg:px-4 font-medium	font-serif font-semibold not-italic">
+          <h1 className="h-[120px] md:h-full lg:h-full md:px-0 text-[#313131] text-[30px] md:text-[30px]  leading:[42px] md:leading-[40px] text-left lg:px-4 font-medium	font-serif font-semibold not-italic">
             {blog?.title}
           </h1>
-          <div className="container mx-aut flex flex-wrap flex-col md:flex-row items-cente mb-12 md:mb-0 md:py-4">
+          <div className="container  flex flex-wrap flex-col md:flex-row items-cente mb-12 md:mb-0 md:py-4">
             <div className="md:ml-auto md:mr-auto flex flex-wrap w-[946px] text-base sm:text-1x text-1x ">
               <p className="text-[30px] md:text-[20px] mr-1 hover:text-gray-900 ">By Thomas Frank</p>
               <p className="text-[30px] md:text-[20px] mr-1 md:mt-1">

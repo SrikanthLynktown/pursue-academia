@@ -46,7 +46,7 @@ const BodySection = (props) => {
                   </a>
                 </div>
                 <div className="flex -ml-14 md:-ml-0">
-                  <div >
+                  <div>
                     <a className="hover:bg-[#E5E5E5] rounded-[5px] px-2 py-1 cursor-pointer">
                       Popular
                     </a>

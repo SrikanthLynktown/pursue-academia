@@ -11,7 +11,6 @@ const GoalSection = () => {
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left text-center space-y-5">
-              {/* <h1 className="text-[44px] text-[#313131] font-semibold max-w-[680px]"> */}
               <h1 className="px-4 md:px-0 text-[#313131] text-[30px] md:text-[48px] w-[345px] md:w-[680px] h-[84px] md:h-[64px] leading:[42px] md:leading-[64px] text-left font-medium	font-serif font-semibold not-italic  max-w-[680px]">
                 Goal Planning Session
               </h1>
@@ -37,11 +36,6 @@ const GoalSection = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <Image className="object-cover object-center rounded" alt="goal" src="/Goal Planning Session.png" width={629.99}
-                height={403.12}
-                priority />
-            </div> */}
             <div className="lg:max-w-lg lg:w-full md:w-1/3 w-[168px] mt-[4px] md:mt-0  md:-mt-0">
               <Image className="md:mx-aut md:ml-[120px] md:mt-[190px] lg:ml-0 lg:mt-0 object-cover object-center rounded" alt="goal" src="/Goal Planning Session.png"
                 width={629.99}

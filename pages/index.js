@@ -20,8 +20,8 @@ export default function Home() {
         useKeyboardArrows
       >
         <HeroSection />
-        <VirtualSection />
-        <GoalSection />
+        {/* <VirtualSection />
+        <GoalSection /> */}
       </Carousel>
     </div>
     <BodySection />

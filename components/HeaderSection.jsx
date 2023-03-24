@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { IoIosMenu } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
 const HeaderSection = () => {
@@ -33,16 +32,15 @@ const HeaderSection = () => {
                         </div>
                     </div>
                 )}
-                {/* <div className="min-h-[636px] px-10 bg-[#EDEDED] py-10 "> */}
                 <nav className="flex justify-between items-start">
                     <div className="flex gap- items-center">
-                        <div className="md:hidden">
+                        <div className="px-3 md:hidden">
                             <AiOutlineMenu
                                 className="text-[3rem] cursor-pointer"
                                 onClick={() => setShowMobileMenue(true)}
                             />
                         </div>
-                        <div className="md:h-[77px] md:w-[149px] md:-mt-[23px]">
+                        <div className="ml-6 md:h-[77px] md:w-[149px] md:-mt-[23px]">
                             <Image src="/logo.png" alt="" srcSet="" width={149} height={77} priority />
                         </div>
                     </div>
@@ -58,9 +56,6 @@ const HeaderSection = () => {
                     </div>
                 </nav>
             </div>
-
-            {/* </div> */}
-
         </>
     )
 }

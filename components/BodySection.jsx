@@ -30,7 +30,7 @@ const BodySection = (props) => {
   };
   return (
     <div className="md:p-10">
-         <div>
+      <div>
         <header className="text-gray-600 body-font">
           <div className="container mx-aut flex flex-wra md:flex-row   ">
             <div className="md:ml-auto w-ful flex px-4">
@@ -96,10 +96,6 @@ const BodySection = (props) => {
           </div>
         </header>
       </div>
-
-
-
-      {/* <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4"> */}
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
         <Consider data={filteredPosts} posts={posts} />
       </div>

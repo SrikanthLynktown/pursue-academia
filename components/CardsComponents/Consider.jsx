@@ -13,7 +13,7 @@ const Consider = ({ data, posts }) => {
       {(data.length != 0 ? data : posts).map((post) => (
 
         <Link href={`/blogs/${post.id}`} key={post.id} className="mx-auto w-[400px]  md:w-[340px] lg:w-[300px] xl:w-[380px] md:h-[396px] shadow-md space-y-8 pb-5 rounded-md overflow-hidden hover:border border-[#4F597B] cursor-pointer  ">
-          <div className="bg-red-300">
+          <div className="bg-white p-2">
             <Image
               src="/IMG-20230315-WA0003.jpg"
               alt=""
@@ -25,8 +25,8 @@ const Consider = ({ data, posts }) => {
             />
           </div>
 
-          <div className="px-5">
-            <h1 className="text-lg font-bold">{post?.title}</h1>
+          <div className="px-2 h-[100px]">
+            <h1 className="w-[300px] mr-[20p] text-[15px] font-medium">{post?.title}</h1>
             <p className="text-lg text-gray-400">by {post?.userId}</p>
           </div>
 

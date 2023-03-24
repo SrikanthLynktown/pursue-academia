@@ -23,7 +23,7 @@ const Blogs = () => {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="ml-5 mt-10 py-10 md:py-0">
+        <div className="md:ml-5 mt-10 py-10 md:py-0">
           <HeaderSection />
         </div>
         <div className="container px-5  mx-auto flex flex-wrap flex-col">

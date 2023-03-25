@@ -8,10 +8,11 @@ const images = [
 
 const ImageSlide = () => {
   return (
-    <div>
+    <div className="">
       <SimpleImageSlider
-        width={896}
-        height={504}
+       className=""
+        width={1000}
+        height={500}
         images={images}
         showBullets={true}
         showNavs={true}

@@ -9,14 +9,14 @@ const ViewCard = () => {
             <section className="text-gray-600 body-font bg-[#E5E5E5] md:h-[1550px] lg:h-full">
                 <div className="container px-5 py-6 mx-aut  ">
                     <div className="px-2 flex flex-wrap grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4  -m-4">
-                        <div className=" md:w-[450px] lg:w-full ">
+                        <div className="w-full md:w-[650px] lg:w-full ">
                             <div className="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <div className="bg-red-300">
                                     <Image
                                         src="/IMG-20230315-WA0003.jpg"
                                         alt=""
                                         srcSet=""
-                                        className="object-cover w-[940px]"
+                                        className="object-cover w-full"
                                         width={400}
                                         height={200}
                                         priority
@@ -48,14 +48,14 @@ const ViewCard = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=" md:w-[450px] md:ml-24 lg:ml-0 lg:w-full ">
+                        <div className=" md:w-[650px] md:ml-80 lg:ml-0 lg:w-full ">
                             <div className="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <div className="bg-red-300">
                                     <Image
                                         src="/IMG-20230315-WA0003.jpg"
                                         alt=""
                                         srcSet=""
-                                        className="object-cover w-[940px]"
+                                        className="object-cover w-full"
                                         width={400}
                                         height={200}
                                         priority
@@ -87,14 +87,14 @@ const ViewCard = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="md:w-[450px] lg:w-full ">
+                        <div className="md:w-[650px] lg:w-full ">
                             <div className="bg-white p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <div className="bg-red-300">
                                     <Image
                                         src="/IMG-20230315-WA0003.jpg"
                                         alt=""
                                         srcSet=""
-                                        className="object-cover w-[940px]"
+                                        className="object-cover w-full"
                                         width={400}
                                         height={200}
                                         priority

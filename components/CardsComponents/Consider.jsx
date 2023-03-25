@@ -27,7 +27,7 @@ const Consider = ({ data, posts }) => {
             />
           </div>
 
-          <div className="px-2 h-[100px]">
+          <div className="px-2 h-[80px]">
             <h1 className="w-[300px] mr-[20p] text-[15px] font-medium">
               {post?.title}
             </h1>

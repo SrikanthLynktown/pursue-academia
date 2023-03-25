@@ -67,7 +67,7 @@ const BodySection = (props) => {
               <div className="flex ml-16 md:ml-6 items-center">
                 <div className="relative">
                   <select
-                    defaultValue={"all"}
+                    // defaultValue={"all"}
                     value={selectedValue}
                     onChange={handleChange}
                     className="rounded-[5px] border border-[#DADADA] appearance-none focus:outline-none  pl-3  w-[110px] h-[40px]"

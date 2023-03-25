@@ -86,10 +86,10 @@ const Blogs = () => {
             PageMaker including versions of LoremPageMaker including versions of
             Lorem Ipsum.
           </p>
-          <h1 className="text-[#000000] font-inter leading-[50.83px] w-[271px] h-[51px] font-bold m-12 text-[42px] ml-[585px]">
+          <h1 className="text-[#000000] font-inter leading-[50.83px] w-[271px] h-[51px] font-bold m-12 text-[42px] ">
             Recent Posts
           </h1>
-          <div className="w-[1400px] md:w- ">
+          <div className="w-[1400px] ">
             <ViewCard />
           </div>
         </div>
